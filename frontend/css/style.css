@@ -393,3 +393,8 @@ section {
 .hidden {
   display: none;
 }
+
+/* CUSTOM */
+.logo img {
+  width: 300px;
+}
