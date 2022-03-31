@@ -14,33 +14,33 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10,
+    growEditionSizeTo: 100,
     layersOrder: [
-      { name: "Backgrounds" },
-      { name: "Beards" },     
+      { name: "Backgrounds" },   
       { name: "Bodies" },      
-      { name: "Beak" },
-      { name: "Feet Honoring Ukraine" },
-      { name: "Hand Honoring Ukraine" },
       { name: "Hats" },
       { name: "Tatoos Honoring Ukraine" },
       { name: "Chest Honoring Ukraine" },
+      { name: "Feet Honoring Ukraine" },
+      { name: "Hand Honoring Ukraine" },
       { name: "Earring Honoring Ukraine" },
+      { name: "Beards" }, 
+      { name: "Beak" },
     ],
   },
   {
-    growEditionSizeTo: 20,
+    growEditionSizeTo: 10000,
     layersOrder: [
       { name: "Backgrounds" },
-      { name: "Beards" },  
-      { name: "Bodies" },      
-      { name: "Beak" },
-      { name: "Chest" },
-      { name: "Earrings" },
-      { name: "Feet" },
-      { name: "Hand" },
+      { name: "Bodies" }, 
       { name: "Hats" },
       { name: "Tatoos" },
+      { name: "Chest" },
+      { name: "Feet" },
+      { name: "Hand" },
+      { name: "Earrings" },
+      { name: "Beards" }, 
+      { name: "Beak" },
     ],
   },
 ];
@@ -77,10 +77,10 @@ const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MAT
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-04-15T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-03-15T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2022-04-02T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-03-02T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 500; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x349Bdc8d6DAb38d263C105AefC111265dfC5f406"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
