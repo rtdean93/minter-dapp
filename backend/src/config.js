@@ -29,7 +29,7 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 10000,
+    growEditionSizeTo: 300,
     layersOrder: [
       { name: "Backgrounds" },
       { name: "Bodies" }, 
@@ -72,7 +72,7 @@ const CONTRACT_SYMBOL = 'BLIMEY';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x349Bdc8d6DAb38d263C105AefC111265dfC5f406';
 const TREASURY_ADDRESS = '0x349Bdc8d6DAb38d263C105AefC111265dfC5f406';
-const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MAX_SUPPLY = 300; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
 const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
