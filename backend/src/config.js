@@ -7,28 +7,13 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Blimey Birds Test";
-const description = "Blimey Birds on rinkeby test network!";
+const namePrefix = "Blimey Birds";
+const description = "Blimey Birds have been released!";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100,
-    layersOrder: [
-      { name: "Backgrounds" },   
-      { name: "Bodies" },      
-      { name: "Hats" },
-      { name: "Tatoos Honoring Ukraine" },
-      { name: "Chest Honoring Ukraine" },
-      { name: "Feet Honoring Ukraine" },
-      { name: "Hand Honoring Ukraine" },
-      { name: "Earring Honoring Ukraine" },
-      { name: "Beards" }, 
-      { name: "Beak" },
-    ],
-  },
-  {
-    growEditionSizeTo: 300,
+    growEditionSizeTo: 10000,
     layersOrder: [
       { name: "Backgrounds" },
       { name: "Bodies" }, 
@@ -71,15 +56,15 @@ const CONTRACT_SYMBOL = 'BLIMEY';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0x349Bdc8d6DAb38d263C105AefC111265dfC5f406';
 const TREASURY_ADDRESS = '0x349Bdc8d6DAb38d263C105AefC111265dfC5f406';
-const MAX_SUPPLY = 5000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Ethereum = ETH, Polygon = MATIC. CANNOT BE UPDATED!
-const TOKENS_PER_MINT = 10; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
+const MAX_SUPPLY = 10000; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
+const MINT_PRICE = 0.001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const TOKENS_PER_MINT = 50; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2022-03-15T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2022-04-15T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PRESALE_MINT_START_DATE = "2022-03-02T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
+const PRESALE_MINT_START_DATE = "2022-04-07T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
 const ROYALTY_SHARE = 500; // Percentage of the token price that goes to the royalty address. 100 bps = 1%
 const ROYALTY_ADDRESS = "0x349Bdc8d6DAb38d263C105AefC111265dfC5f406"; // Address that will receive the royalty
 const BASE_URI = null; // only update if you want to manually set the base uri
@@ -111,12 +96,12 @@ try {
 
 const solanaMetadata = {
   symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  seller_fee_basis_points: 500, // Define how much % you want from secondary market sales 1000 = 10%
+  external_url: "https://blimeybirds.com",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
-      share: 100,
+      address: "0x349Bdc8d6DAb38d263C105AefC111265dfC5f406",
+      share: 300,
     },
   ],
 };
