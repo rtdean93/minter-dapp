@@ -1,6 +1,6 @@
 const contractAddress = "0x2d85CdeEe1002AA2A9E0d66263463d3c593627C3"; //Replace with your own contract address
 const chain = 'ethereum'; // rinkeby, polygon, or ethereum
-const welcome_h1 = "Welcome to the Blimey Birds NFT Project!!";
+const welcome_h1 = "Welcome to the Blimey Birds NFT Project!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
 const welcome_p = 'The Blimey Birds NFT Project is a decentralized, open-source project that aims to demonstrate how to develope and launch your own NFT Collection. Follow step by step on the <a href="https://youtube.com/codestackr"  target="_blank" rel="noopener noreferrer">codeSTACKr</a> YouTube channel.';
 const h1_presale_coming_soon = "NFT Drop Coming Soon!!";
