@@ -1,4 +1,4 @@
-const contractAddress = "0x7612397993e4Cc17DDD63D699127b775b56aF4FF"; //Replace with your own contract address
+const contractAddress = "0x2d85CdeEe1002AA2A9E0d66263463d3c593627C3"; //Replace with your own contract address
 const chain = 'ethereum'; // rinkeby, polygon, or ethereum
 const welcome_h1 = "Welcome to the Blimey Birds NFT Project!!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
